@@ -35,7 +35,7 @@
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkAnisotropicDiscreteRemeshing.h
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkAnisotropicMetricForClustering.h
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkClusteringExampleFile.h
-  -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkDiscreteRemeshing.h
+  -- Installing: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkDiscreteRemeshing.h
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkIsotropicDiscreteRemeshing.h
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkIsotropicMetricForClustering.h
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkL21MetricForClustering.h
@@ -47,11 +47,11 @@
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkThreadedClustering.h
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkTrianglesProcessing.h
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/DiscreteRemeshing/vtkVerticesProcessing.h
-  -- Up-to-date: C:/vtk/ACVD/install/bin/ACVD.exe
+  -- Installing: C:/vtk/ACVD/install/bin/ACVD.exe
   -- Installing: C:/vtk/ACVD/install/bin/ACVDQ.exe
-  -- Up-to-date: C:/vtk/ACVD/install/bin/AnisotropicRemeshing.exe
-  -- Up-to-date: C:/vtk/ACVD/install/bin/AnisotropicRemeshingQ.exe
-  -- Up-to-date: C:/vtk/ACVD/install/bin/VolumeAnalysis.exe
+  -- Installing: C:/vtk/ACVD/install/bin/AnisotropicRemeshing.exe
+  -- Installing: C:/vtk/ACVD/install/bin/AnisotropicRemeshingQ.exe
+  -- Installing: C:/vtk/ACVD/install/bin/VolumeAnalysis.exe
   -- Up-to-date: C:/vtk/ACVD/install/bin/ManifoldSimplification.exe
   -- Up-to-date: C:/vtk/ACVD/install/lib/vtkVolumeProcessing.lib
   -- Up-to-date: C:/vtk/ACVD/install/include/ACVD/VolumeProcessing/vtkImageDataCleanLabels.h

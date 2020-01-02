@@ -201,6 +201,7 @@ int vtkDiscreteRemeshing < Metric >::DetectNonManifoldOutputVertices() {
 	vtkIdList *ClustersWithIssues = vtkIdList::New();
 	vtkIdList *CList = vtkIdList::New();
 
+	int NumNonManifold = 0;
 	for ( int cluster = 0; cluster != this->NumberOfClusters; cluster++ ) {
 
 		if ( this->Output->IsVertexManifold( cluster ) ) continue;
@@ -215,8 +216,8 @@ int vtkDiscreteRemeshing < Metric >::DetectNonManifoldOutputVertices() {
 				if ( this->Input->IsVertexManifold( Items->GetId( 0 ) ) != 1 ) {
 
 					problem = false;
-					cout << "discarding this topology issue as the input mesh also has a topology issue" << endl;
-
+					NumNonManifold++;
+					//cout << "discarding this topology issue as the input mesh also has a topology issue" << endl;
 				}
 
 			}
@@ -243,6 +244,8 @@ int vtkDiscreteRemeshing < Metric >::DetectNonManifoldOutputVertices() {
 		}
 
 	}
+	//cout << "discarding " << NumNonManifold << " topology non-manifold issues as the input mesh also has a topology issue" << endl;
+	NumNonManifold = 0;
 
 	CList->Delete();
 	vtkIdList *FList = vtkIdList::New();
@@ -947,6 +950,7 @@ template < class Metric > void vtkDiscreteRemeshing < Metric >::Remesh ()
 
 	}
 
+	if (this->ConsoleOutput==0) this->Output->DisplayMeshProperties();
 }
 template < class Metric >
 void vtkDiscreteRemeshing <Metric >::GetDualItemNeighbourClusters ( vtkIdType item,vtkIdList * List ) {

@@ -37,6 +37,7 @@ Author:   Sebastien Valette
 #include <string.h>
 #include <stdlib.h>
 #include <iostream>
+#include <vtkTimerLog.h>
 
 #include "vtkIsotropicDiscreteRemeshing.h"
 
@@ -70,6 +71,8 @@ int main( int argc, char *argv[] )
 
 	strcpy (outputfile, "simplification.ply");
 
+	int verbose = 0;
+
 	if(argc > 3) {
 		std::cout << "load : " << argv[1] << endl;
 		NumberOfSamples = atoi(argv[2]);
@@ -92,6 +95,7 @@ int main( int argc, char *argv[] )
 		cout << "-cmax value : set maximum custom indicator value" << endl;
 		cout << "-cf value : set custom indicator multiplication factor" << endl;
 		cout << "-m 0/1 : enforce a manifold output ON/OFF (default : 0)" << endl;
+		cout << "-v 0/1/2 : console output level (default : 0)" << endl;
 		return (0);
 	}
 
@@ -182,6 +186,10 @@ int main( int argc, char *argv[] )
 			cout << "Setting boundary fixing to : " << value << endl;
 			Remesh->SetBoundaryFixing(atoi(value));
 		}
+		if (strcmp(key, "-v") == 0) {
+			cout << "Setting output verbose : " << value << endl;
+			verbose = atoi(value);
+		}
 		ArgumentsIndex += 2;
 	}
 
@@ -199,10 +207,14 @@ int main( int argc, char *argv[] )
 		Window->Interact();
 	}
 
+	vtkTimerLog	*Timer = vtkTimerLog::New();
+
+	double StartTime = Timer->GetUniversalTime();
+
 	Remesh->SetInput(Mesh);
 	Remesh->SetFileLoadSaveOption(0);
 	Remesh->SetNumberOfClusters(NumberOfSamples);
-	Remesh->SetConsoleOutput(2);
+	Remesh->SetConsoleOutput(verbose);
 	Remesh->SetSubsamplingThreshold(SubsamplingThreshold);
 	Remesh->GetMetric()->SetGradation(Gradation);
 	Remesh->SetDisplay(Display);
@@ -283,6 +295,10 @@ int main( int argc, char *argv[] )
 			OptimizedMeshWindow->Interact ();
 		}
 	}
+
+	Timer->StopTimer();
+
+	cout << "The remesh took :" << Timer->GetElapsedTime() << " seconds." << endl;
 
 	// save the output mesh to .ply format
 	char REALFILE[500];

@@ -1,5 +1,4 @@
-﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/DiscreteRemeshing/Examples/CMakeLists.txt
-  AnisotropicRemeshingQ.cxx
+﻿  AnisotropicRemeshingQ.cxx
 C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshingQ.cxx(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
 C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshingQ.cxx(229): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
@@ -15,12 +14,12 @@ C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(670): warning C4996: 'strc
           [
               Metric=vtkQuadricAnisotropicMetricForClustering
           ]
-  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkDiscreteRemeshing.h(895): note: see reference to function template instantiation 'vtkIntArray *vtkUniformClustering<Metric,vtkIdType>::ProcessClustering(vtkIdList *)' being compiled
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkDiscreteRemeshing.h(898): note: see reference to function template instantiation 'vtkIntArray *vtkUniformClustering<Metric,vtkIdType>::ProcessClustering(vtkIdList *)' being compiled
           with
           [
               Metric=vtkQuadricAnisotropicMetricForClustering
           ]
-  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkDiscreteRemeshing.h(876): note: while compiling class template member function 'void vtkDiscreteRemeshing<vtkQuadricAnisotropicMetricForClustering>::Remesh(void)'
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkDiscreteRemeshing.h(879): note: while compiling class template member function 'void vtkDiscreteRemeshing<vtkQuadricAnisotropicMetricForClustering>::Remesh(void)'
   C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshingQ.cxx(223): note: see reference to function template instantiation 'void vtkDiscreteRemeshing<vtkQuadricAnisotropicMetricForClustering>::Remesh(void)' being compiled
   C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkVerticesProcessing.h(44): note: see reference to class template instantiation 'vtkDiscreteRemeshing<vtkQuadricAnisotropicMetricForClustering>' being compiled
   C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshingQ.cxx(84): note: see reference to class template instantiation 'vtkVerticesProcessing<QuadricAnisotropicRemeshing>' being compiled

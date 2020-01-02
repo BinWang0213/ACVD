@@ -1,4 +1,4 @@
-ACVD Windows x64
+ACVD 
 ====
 [![Build Status](https://travis-ci.org/valette/ACVD.png)](https://travis-ci.org/valette/ACVD)
 

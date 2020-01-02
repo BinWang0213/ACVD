@@ -35,6 +35,8 @@ Auteur:   Sebastien Valette,
 #include <vtkPLYWriter.h>
 #include <vtkSTLWriter.h>
 #include <vtkCellData.h>
+#include <vtkTimerLog.h>
+
 
 #include "vtkIsotropicDiscreteRemeshing.h"
 
@@ -81,7 +83,10 @@ int main( int argc, char *argv[] ) {
 									// other appropriates values range between 0 and 2
 	int subsamplingThreshold = 10;	// subsampling threshold
 	char* outputDirectory = 0;		// output directory
+	char outputfile[500];			// output filename
 	vtkIdList *fixedVertices = 0;
+
+	int verbose = 0;
 	//*******************************************************************************************
 
 	char filename[ 5000 ];
@@ -100,6 +105,8 @@ int main( int argc, char *argv[] ) {
 		cout << "-b 0/1 : sets mesh boundary fixing off/on (default : 0)" << endl;
 		cout<<"-s threshold : defines the subsampling threshold i.e. the input mesh will be subdivided until its number ";
 		cout<<" of vertices is above nvertices*threshold (default=10)"<<endl;
+		cout << "-o directory : sets the output directory " << endl;
+		cout << "-of file : sets the output file name " << endl;
 		cout<<"-d 0/1/2 : enables display (default : 0)"<<endl;
 		cout << "-l ratio : split the edges longer than ( averageLength * ratio )" << endl;
 		cout << "-q 1/2/3 : qets number of eigenvalues used for quadric-based vertex relocation to 0/1/2 (default : 3)"<< endl;
@@ -108,6 +115,7 @@ int main( int argc, char *argv[] ) {
 		cout<<"-cmax value : set maximum custom indicator value"<<endl;
 		cout<<"-cf value : set custom indicator multiplication factor"<<endl;
 		cout<<"-m 0/1 : enforce a manifold output ON/OFF (default : 0)"<<endl;
+		cout << "-v 0/1/2 : console output level (default : 0)" << endl;
 		return 0;
 
 	}
@@ -118,6 +126,7 @@ int main( int argc, char *argv[] ) {
 	mesh->GetCellData()->Initialize();
 	mesh->GetPointData()->Initialize();
 	mesh->DisplayMeshProperties();
+
 
 	// get mandatory arguments
 	if( argc > 2 ) {
@@ -178,7 +187,11 @@ int main( int argc, char *argv[] ) {
 			cout << "OutputDirectory: " << outputDirectory << endl;
 			remesh->SetOutputDirectory( value );
 
-		} else if ( strcmp( key, "-l" ) == 0 ) {
+		} else if (strcmp(key, "-of") == 0) {
+			strcpy(outputfile, value);
+			cout << "Output file name: " << outputfile << endl;
+		}
+		else if ( strcmp( key, "-l" ) == 0 ) {
 
 			mesh->SplitLongEdges( atof( value ) );
 			cout << "Splitting edges longer than "
@@ -230,7 +243,13 @@ int main( int argc, char *argv[] ) {
 			cout << "Setting boundary fixing to : " << value << endl;
 			remesh->SetBoundaryFixing( atoi( value ) );
 
-		} else if ( strcmp( key, "-fv" ) == 0 ) {
+		} else if (strcmp(key, "-v") == 0) {
+
+			cout << "Setting output verbose : " << value << endl;
+			verbose = atoi(value);
+		
+		}
+		else if ( strcmp( key, "-fv" ) == 0 ) {
 
 			ifstream input;
 			input.open( value );
@@ -302,10 +321,15 @@ int main( int argc, char *argv[] ) {
 	}
 	cout << "List size : " << fixedVertices->GetNumberOfIds() << endl;
 */
+	vtkTimerLog	*Timer = vtkTimerLog::New();
 
+	double StartTime = Timer->GetUniversalTime();
+	
+	Timer->StartTimer();
+	
 	remesh->SetInput( mesh );
 	remesh->SetFileLoadSaveOption( 0 );
-	remesh->SetConsoleOutput( 2 );
+	remesh->SetConsoleOutput(verbose);
 	remesh->SetSubsamplingThreshold( subsamplingThreshold );
 	remesh->GetMetric()->SetGradation( gradation );
 	remesh->SetDisplay( display );
@@ -351,6 +375,10 @@ int main( int argc, char *argv[] ) {
 		fixedVertices->Delete();
 
 	}
+	Timer->StopTimer();
+
+	cout << "The remesh took :" << Timer->GetElapsedTime() << " seconds." << endl;
+
 
 	// save the output mesh to .ply format
 	char realFile[ 5000 ];
@@ -358,17 +386,19 @@ int main( int argc, char *argv[] ) {
 	if ( outputDirectory ) {
 
 		strcpy ( realFile, outputDirectory );
-		strcat ( realFile, "simplification.ply" );
+		strcat ( realFile, outputfile);
 	
-	} else strcpy( realFile, "simplification.ply" );
+	} else strcpy( realFile, outputfile);
 	
 	vtkPLYWriter *plyWriter = vtkPLYWriter::New();
 	plyWriter->SetInputData( remesh->GetOutput() );
 	plyWriter->SetFileName( realFile );
 	plyWriter->Write();
+
+
 	plyWriter->Delete();
 	remesh->Delete();
 	mesh->Delete();
+	Timer->Delete();
 	if ( display ) window->Delete();
-
 }
