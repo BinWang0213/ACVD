@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/VolumeProcessing/Examples/CMakeLists.txt
+  ReadImage.cxx
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/ReadImage.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/ReadImage.exp
+  ReadImage.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\ReadImage.exe

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt
+  RandomTriangulation.cxx
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/RandomTriangulation.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/RandomTriangulation.exp
+  RandomTriangulation.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\RandomTriangulation.exe

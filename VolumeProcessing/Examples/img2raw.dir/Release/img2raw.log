@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/VolumeProcessing/Examples/CMakeLists.txt
+  img2raw.cxx
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\img2raw.cxx(64): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  img2raw.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\img2raw.exe

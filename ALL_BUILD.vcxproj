@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC03520A-34ED-3471-8EC1-7E8DD7509500}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vtk\ACVD\ACVD-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\vtk\ACVD\ACVD-master\ACVD.json;C:\vtk\ACVD\ACVD-master\ACVDConfig.cmake.in;C:\vtk\ACVD\ACVD-master\ACVDConfigVersion.cmake.in;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkChartsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonComputationalGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonDataModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonExecutionModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMisc.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonTransforms.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDICOMParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistryOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersExtraction.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersFlowPaths.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneric.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHyperTree.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersModeling.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallelImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersPoints.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersProgrammable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSMP.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSelection.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersTexture.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersVerdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkGeovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOEnSight.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExodus.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLSDyna.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLegacy.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMINC.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMovie.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIONetCDF.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOPLY.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallelXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOSQL.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOTecplotTable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOVideo.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXMLParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingFourier.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMorphological.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStencil.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisLayout.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionStyle.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionWidgets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkMetaIO.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkParallelCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingAnnotation.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContextOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingFreeType.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingGL2PSOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLOD.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLabel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolume.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolumeOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesEncodeString.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesHashSource.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkalglib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexodusII.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexpat.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkfreetype.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkgl2ps.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkglew.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkhdf5.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjpeg.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjsoncpp.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkkwiml.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibproj4.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibxml2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtknetcdf.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkoggtheora.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkpng.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksqlite.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksys.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtktiff.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkverdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkzlib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\UseVTK.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfig.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfigVersion.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets-release.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\vtkModuleAPI.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vtk\ACVD\ACVD-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\vtk\ACVD\ACVD-master\ACVD.json;C:\vtk\ACVD\ACVD-master\ACVDConfig.cmake.in;C:\vtk\ACVD\ACVD-master\ACVDConfigVersion.cmake.in;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkChartsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonComputationalGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonDataModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonExecutionModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMisc.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonTransforms.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDICOMParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistryOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersExtraction.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersFlowPaths.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneric.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHyperTree.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersModeling.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallelImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersPoints.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersProgrammable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSMP.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSelection.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersTexture.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersVerdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkGeovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOEnSight.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExodus.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLSDyna.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLegacy.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMINC.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMovie.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIONetCDF.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOPLY.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallelXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOSQL.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOTecplotTable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOVideo.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXMLParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingFourier.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMorphological.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStencil.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisLayout.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionStyle.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionWidgets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkMetaIO.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkParallelCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingAnnotation.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContextOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingFreeType.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingGL2PSOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLOD.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLabel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolume.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolumeOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesEncodeString.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesHashSource.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkalglib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexodusII.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexpat.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkfreetype.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkgl2ps.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkglew.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkhdf5.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjpeg.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjsoncpp.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkkwiml.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibproj4.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibxml2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtknetcdf.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkoggtheora.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkpng.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksqlite.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksys.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtktiff.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkverdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkzlib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\UseVTK.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfig.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfigVersion.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets-release.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\vtkModuleAPI.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vtk\ACVD\ACVD-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\vtk\ACVD\ACVD-master\ACVD.json;C:\vtk\ACVD\ACVD-master\ACVDConfig.cmake.in;C:\vtk\ACVD\ACVD-master\ACVDConfigVersion.cmake.in;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkChartsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonComputationalGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonDataModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonExecutionModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMisc.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonTransforms.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDICOMParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistryOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersExtraction.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersFlowPaths.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneric.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHyperTree.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersModeling.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallelImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersPoints.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersProgrammable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSMP.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSelection.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersTexture.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersVerdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkGeovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOEnSight.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExodus.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLSDyna.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLegacy.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMINC.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMovie.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIONetCDF.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOPLY.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallelXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOSQL.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOTecplotTable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOVideo.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXMLParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingFourier.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMorphological.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStencil.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisLayout.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionStyle.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionWidgets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkMetaIO.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkParallelCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingAnnotation.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContextOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingFreeType.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingGL2PSOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLOD.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLabel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolume.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolumeOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesEncodeString.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesHashSource.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkalglib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexodusII.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexpat.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkfreetype.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkgl2ps.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkglew.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkhdf5.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjpeg.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjsoncpp.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkkwiml.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibproj4.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibxml2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtknetcdf.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkoggtheora.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkpng.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksqlite.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksys.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtktiff.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkverdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkzlib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\UseVTK.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfig.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfigVersion.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets-release.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\vtkModuleAPI.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\vtk\ACVD\ACVD-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\vtk\ACVD\ACVD-master\ACVD.json;C:\vtk\ACVD\ACVD-master\ACVDConfig.cmake.in;C:\vtk\ACVD\ACVD-master\ACVDConfigVersion.cmake.in;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeCXXCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeRCCompiler.cmake;C:\vtk\ACVD\ACVD-master\CMakeFiles\3.16.0\CMakeSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkChartsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonComputationalGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonDataModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonExecutionModel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonMisc.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonSystem.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkCommonTransforms.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDICOMParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkDomainsChemistryOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersExtraction.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersFlowPaths.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeneric.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersHyperTree.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersModeling.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersParallelImaging.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersPoints.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersProgrammable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSMP.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSelection.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersTexture.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkFiltersVerdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkGeovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOAMR.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOEnSight.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExodus.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOExport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOGeometry.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOImport.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLSDyna.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOLegacy.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMINC.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOMovie.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIONetCDF.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOPLY.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOParallelXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOSQL.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOTecplotTable.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOVideo.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXML.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkIOXMLParser.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingColor.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingFourier.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingGeneral.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingHybrid.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMath.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingMorphological.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingSources.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStatistics.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkImagingStencil.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInfovisLayout.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionStyle.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkInteractionWidgets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkMetaIO.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkParallelCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingAnnotation.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingContextOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingFreeType.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingGL2PSOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingImage.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLOD.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingLabel.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolume.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkRenderingVolumeOpenGL2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesEncodeString.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkUtilitiesHashSource.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsContext2D.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsCore.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkViewsInfovis.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkalglib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexodusII.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkexpat.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkfreetype.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkgl2ps.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkglew.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkhdf5.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjpeg.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkjsoncpp.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkkwiml.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibproj4.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtklibxml2.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtknetcdf.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkoggtheora.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkpng.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksqlite.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtksys.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtktiff.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkverdict.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\Modules\vtkzlib.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\UseVTK.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfig.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKConfigVersion.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets-release.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\VTKTargets.cmake;C:\vtk\VTK711\install\lib\cmake\vtk-7.1\vtkModuleAPI.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\vtk\ACVD\ACVD-master\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\ZERO_CHECK.vcxproj">
+      <Project>{F3D0A045-64F8-3D06-B540-0DEA1DA4DD8C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\ACVD.vcxproj">
+      <Project>{F34C4CD4-D646-386D-9324-09A685FA2DEF}</Project>
+      <Name>ACVD</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\ACVDQ.vcxproj">
+      <Project>{3F4772D7-7F58-3678-B04B-48D521A8CD81}</Project>
+      <Name>ACVDQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.vcxproj">
+      <Project>{34AD2F01-CBF3-39CC-8B56-FB56B9749BA0}</Project>
+      <Name>AnisotropicRemeshing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshingQ.vcxproj">
+      <Project>{90A9585D-D017-39A3-B6B2-3193A0B6E990}</Project>
+      <Name>AnisotropicRemeshingQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\CheckOrientation.vcxproj">
+      <Project>{F4D1F50E-FEF0-3095-AD89-C668D3498737}</Project>
+      <Name>CheckOrientation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\CleanMesh.vcxproj">
+      <Project>{0617BD8B-0E22-3163-94FC-F457E425B01C}</Project>
+      <Name>CleanMesh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\ExamplevtkSurface.vcxproj">
+      <Project>{7DF95397-7D8C-31C1-AC2F-6B618B119EAB}</Project>
+      <Name>ExamplevtkSurface</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\ManifoldSimplification.vcxproj">
+      <Project>{853B3514-9507-3E09-934A-D3F02AE25DDC}</Project>
+      <Name>ManifoldSimplification</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\Minc2Mhd.vcxproj">
+      <Project>{5F8EF717-0A55-309F-80CA-A05A2624E02F}</Project>
+      <Name>Minc2Mhd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\RandomTriangulation.vcxproj">
+      <Project>{44A4F366-10B7-3A11-B0D3-64987480E7E4}</Project>
+      <Name>RandomTriangulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\ReadImage.vcxproj">
+      <Project>{F603F16F-2258-3364-8506-DECCFF92A847}</Project>
+      <Name>ReadImage</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.vcxproj">
+      <Project>{A03EF1E0-E33D-3097-8990-C2D3382D2A70}</Project>
+      <Name>VolumeAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeAnisotropicDiffusion.vcxproj">
+      <Project>{37B96F4F-A599-36A5-8D72-4129B7D8DADA}</Project>
+      <Name>VolumeAnisotropicDiffusion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeCleanLabels.vcxproj">
+      <Project>{671214A3-D3C0-3825-86A6-063BA62526F2}</Project>
+      <Name>VolumeCleanLabels</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeCrop.vcxproj">
+      <Project>{67A15C28-6EE4-31DC-AE76-223787052FC3}</Project>
+      <Name>VolumeCrop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeMedian.vcxproj">
+      <Project>{7B1B7973-C8CB-3420-BCAA-A2A1B3791E90}</Project>
+      <Name>VolumeMedian</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeOOCSlice.vcxproj">
+      <Project>{5CD93FBD-A62F-3989-B641-84D8443989A2}</Project>
+      <Name>VolumeOOCSlice</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.vcxproj">
+      <Project>{8A313912-3CE5-3742-B1EA-E1F00C7608DD}</Project>
+      <Name>VolumeSlice</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSubsample.vcxproj">
+      <Project>{FC5A3236-4AF3-3B04-B53E-291AB913B423}</Project>
+      <Name>VolumeSubsample</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\img2raw.vcxproj">
+      <Project>{9B1BED68-0C0A-37E0-B7D0-B880B593574D}</Project>
+      <Name>img2raw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\mesh2vtk.vcxproj">
+      <Project>{D15D431A-C46B-330B-AB94-E1B699B37EAE}</Project>
+      <Name>mesh2vtk</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\png2raw.vcxproj">
+      <Project>{5FE764F9-4892-3CB9-8CD9-421ADFDE6C87}</Project>
+      <Name>png2raw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\stl2ply.vcxproj">
+      <Project>{4BF0B8B5-6CCB-3DA7-9200-D075E48CEF48}</Project>
+      <Name>stl2ply</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\viewer.vcxproj">
+      <Project>{8B3B5210-2F87-3987-85D1-E13363FFF50D}</Project>
+      <Name>viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\viewer2.vcxproj">
+      <Project>{D021715C-B68B-3E1E-A83C-3107C0E73D17}</Project>
+      <Name>viewer2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\Examples\vtk2ply.vcxproj">
+      <Project>{FF24A55C-E35C-3171-8C7F-CEFC59F28577}</Project>
+      <Name>vtk2ply</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkDiscreteRemeshing.vcxproj">
+      <Project>{ED000E11-3ADE-309B-AD39-524632A264F1}</Project>
+      <Name>vtkDiscreteRemeshing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\vtkSurface.vcxproj">
+      <Project>{D63E7226-A7D2-39DD-9267-595C1AA70006}</Project>
+      <Name>vtkSurface</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\VolumeProcessing\vtkVolumeProcessing.vcxproj">
+      <Project>{A2F4EF28-C96A-3B05-8CEF-EB7286A63316}</Project>
+      <Name>vtkVolumeProcessing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

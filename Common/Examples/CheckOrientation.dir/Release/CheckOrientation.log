@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt
+  CheckOrientation.cxx
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/CheckOrientation.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/CheckOrientation.exp
+  CheckOrientation.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\CheckOrientation.exe

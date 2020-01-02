@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt
+  viewer2.cxx
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/viewer2.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/viewer2.exp
+  viewer2.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\viewer2.exe

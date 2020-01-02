@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/VolumeProcessing/CMakeLists.txt
+  vtkImageDataCleanLabels.cxx
+  vtkOOCMetaImageReader.cxx
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\vtkOOCMetaImageReader.cxx(75): warning C4101: 'idx': unreferenced local variable
+  Generating Code...
+  vtkVolumeProcessing.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\vtkVolumeProcessing.lib

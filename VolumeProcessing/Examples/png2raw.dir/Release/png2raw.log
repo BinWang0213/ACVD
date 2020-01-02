@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/VolumeProcessing/Examples/CMakeLists.txt
+  png2raw.cxx
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/png2raw.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/png2raw.exp
+  png2raw.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\png2raw.exe

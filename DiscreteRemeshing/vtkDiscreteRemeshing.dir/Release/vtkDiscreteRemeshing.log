@@ -1,0 +1,31 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/DiscreteRemeshing/CMakeLists.txt
+  vtkTestUniformClustering.cxx
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(670): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(653): note: while compiling class template member function 'vtkIntArray *vtkUniformClustering<Metric,EdgeType>::ProcessClustering(vtkIdList *)'
+          with
+          [
+              Metric=vtkMetricExample,
+              EdgeType=vtkIdType
+          ]
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkTestUniformClustering.cxx(39): note: see reference to function template instantiation 'vtkIntArray *vtkUniformClustering<Metric,EdgeType>::ProcessClustering(vtkIdList *)' being compiled
+          with
+          [
+              Metric=vtkMetricExample,
+              EdgeType=vtkIdType
+          ]
+  c:\vtk\acvd\acvd-master\discreteremeshing\vtkClusteringExampleFile.h(38): note: see reference to class template instantiation 'vtkUniformClustering<Metric,EdgeType>' being compiled
+          with
+          [
+              Metric=vtkMetricExample,
+              EdgeType=vtkIdType
+          ]
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkTestUniformClustering.cxx(37): note: see reference to class template instantiation 'vtkClusteringExample<vtkMetricExample,vtkIdType>' being compiled
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(671): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(673): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  vtkManifoldSimplification.cxx
+  Generating Code...
+vtkTestUniformClustering.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  vtkDiscreteRemeshing.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\vtkDiscreteRemeshing.lib

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF24A55C-E35C-3171-8C7F-CEFC59F28577}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>vtk2ply</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vtk\ACVD\ACVD-master\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtk2ply.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vtk2ply</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vtk\ACVD\ACVD-master\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtk2ply.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vtk2ply</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\vtk\ACVD\ACVD-master\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtk2ply.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vtk2ply</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\vtk\ACVD\ACVD-master\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtk2ply.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vtk2ply</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\bin\Debug\vtkSurface-d.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistryOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersFlowPaths-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneric-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHyperTree-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallelImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersPoints-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersProgrammable-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSMP-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSelection-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersTexture-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersVerdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkverdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkGeovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkproj4-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOEnSight-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExodus-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExport-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingGL2PSOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkgl2ps-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImport-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtklibxml2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLSDyna-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMINC-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMovie-7.1.lib;C:\vtk\VTK711\install\lib\vtkoggtheora-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOPLY-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkjsoncpp-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallelXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOSQL-7.1.lib;C:\vtk\VTK711\install\lib\vtksqlite-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOTecplotTable-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOVideo-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMorphological-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStencil-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContextOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLOD-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolumeOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;vfw32.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;opengl32.lib;glu32.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;comctl32.lib;wsock32.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;ws2_32.lib;Psapi.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/vtk/ACVD/ACVD-master/bin/Debug/vtk2ply.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/vtk/ACVD/ACVD-master/bin/Debug/vtk2ply.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\bin\Release\vtkSurface.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistryOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersFlowPaths-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneric-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHyperTree-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallelImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersPoints-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersProgrammable-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSMP-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSelection-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersTexture-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersVerdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkverdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkGeovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkproj4-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOEnSight-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExodus-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExport-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingGL2PSOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkgl2ps-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImport-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtklibxml2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLSDyna-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMINC-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMovie-7.1.lib;C:\vtk\VTK711\install\lib\vtkoggtheora-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOPLY-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkjsoncpp-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallelXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOSQL-7.1.lib;C:\vtk\VTK711\install\lib\vtksqlite-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOTecplotTable-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOVideo-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMorphological-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStencil-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContextOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLOD-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolumeOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;vfw32.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;opengl32.lib;glu32.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;comctl32.lib;wsock32.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;ws2_32.lib;Psapi.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/vtk/ACVD/ACVD-master/bin/Release/vtk2ply.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/vtk/ACVD/ACVD-master/bin/Release/vtk2ply.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\bin\MinSizeRel\vtkSurface.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistryOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersFlowPaths-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneric-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHyperTree-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallelImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersPoints-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersProgrammable-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSMP-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSelection-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersTexture-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersVerdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkverdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkGeovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkproj4-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOEnSight-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExodus-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExport-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingGL2PSOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkgl2ps-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImport-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtklibxml2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLSDyna-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMINC-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMovie-7.1.lib;C:\vtk\VTK711\install\lib\vtkoggtheora-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOPLY-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkjsoncpp-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallelXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOSQL-7.1.lib;C:\vtk\VTK711\install\lib\vtksqlite-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOTecplotTable-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOVideo-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMorphological-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStencil-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContextOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLOD-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolumeOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;vfw32.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;opengl32.lib;glu32.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;comctl32.lib;wsock32.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;ws2_32.lib;Psapi.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/vtk/ACVD/ACVD-master/bin/MinSizeRel/vtk2ply.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/vtk/ACVD/ACVD-master/bin/MinSizeRel/vtk2ply.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE="C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2);vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2);vtkRenderingCore_INCLUDE=\"C:/vtk/ACVD/ACVD-master/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingFreeType_vtkRenderingOpenGL2.h\";vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2);vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2);CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\vtk\VTK711\install\include\vtk-7.1;C:\vtk\ACVD\ACVD-master\Common;C:\vtk\VTK711\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\bin\RelWithDebInfo\vtkSurface.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistryOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersFlowPaths-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneric-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHyperTree-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallelImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersPoints-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersProgrammable-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSMP-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSelection-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersTexture-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersVerdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkverdict-7.1.lib;C:\vtk\VTK711\install\lib\vtkGeovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkproj4-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOEnSight-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExodus-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOExport-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingGL2PSOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkgl2ps-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImport-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtklibxml2-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLSDyna-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMINC-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOMovie-7.1.lib;C:\vtk\VTK711\install\lib\vtkoggtheora-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOPLY-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkjsoncpp-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOParallelXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOSQL-7.1.lib;C:\vtk\VTK711\install\lib\vtksqlite-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOTecplotTable-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOVideo-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMorphological-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingStencil-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContextOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLOD-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolumeOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsInfovis-7.1.lib;C:\vtk\VTK711\install\lib\vtkDomainsChemistry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersAMR-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersParallel-7.1.lib;C:\vtk\VTK711\install\lib\vtkexoIIc-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkIONetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF_cxx-7.1.lib;C:\vtk\VTK711\install\lib\vtkNetCDF-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5_hl-7.1.lib;C:\vtk\VTK711\install\lib\vtkhdf5-7.1.lib;C:\vtk\VTK711\install\lib\vtkParallelCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOLegacy-7.1.lib;vfw32.lib;C:\vtk\VTK711\install\lib\vtkRenderingOpenGL2-7.1.lib;C:\vtk\VTK711\install\lib\vtkglew-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingMath-7.1.lib;opengl32.lib;glu32.lib;C:\vtk\VTK711\install\lib\vtkChartsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingContext2D-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersImaging-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisLayout-7.1.lib;C:\vtk\VTK711\install\lib\vtkInfovisCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkViewsCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionWidgets-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersModeling-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingHybrid-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOImage-7.1.lib;C:\vtk\VTK711\install\lib\vtkDICOMParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkmetaio-7.1.lib;comctl32.lib;wsock32.lib;C:\vtk\VTK711\install\lib\vtkpng-7.1.lib;C:\vtk\VTK711\install\lib\vtktiff-7.1.lib;C:\vtk\VTK711\install\lib\vtkjpeg-7.1.lib;C:\vtk\VTK711\install\lib\vtkInteractionStyle-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersExtraction-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersStatistics-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingFourier-7.1.lib;C:\vtk\VTK711\install\lib\vtkalglib-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingAnnotation-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingVolume-7.1.lib;C:\vtk\VTK711\install\lib\vtkImagingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXML-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOXMLParser-7.1.lib;C:\vtk\VTK711\install\lib\vtkIOCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkexpat-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingLabel-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingFreeType-7.1.lib;C:\vtk\VTK711\install\lib\vtkRenderingCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonColor-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersSources-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersGeneral-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonComputationalGeometry-7.1.lib;C:\vtk\VTK711\install\lib\vtkFiltersCore-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonExecutionModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonDataModel-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonTransforms-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMisc-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonMath-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonSystem-7.1.lib;C:\vtk\VTK711\install\lib\vtkCommonCore-7.1.lib;C:\vtk\VTK711\install\lib\vtksys-7.1.lib;ws2_32.lib;Psapi.lib;C:\vtk\VTK711\install\lib\vtkfreetype-7.1.lib;C:\vtk\VTK711\install\lib\vtkzlib-7.1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/vtk/ACVD/ACVD-master/bin/RelWithDebInfo/vtk2ply.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/vtk/ACVD/ACVD-master/bin/RelWithDebInfo/vtk2ply.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vtk\ACVD\ACVD-master\Common\Examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\vtk\ACVD\ACVD-master\Common\Examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\vtk\ACVD\ACVD-master\Common\Examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\vtk\ACVD\ACVD-master\Common\Examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/vtk/ACVD/ACVD-master -BC:/vtk/ACVD/ACVD-master --check-stamp-file C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\vtk\ACVD\ACVD-master\Common\Examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\Examples\vtk2ply.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\ZERO_CHECK.vcxproj">
+      <Project>{F3D0A045-64F8-3D06-B540-0DEA1DA4DD8C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\vtk\ACVD\ACVD-master\Common\vtkSurface.vcxproj">
+      <Project>{D63E7226-A7D2-39DD-9267-595C1AA70006}</Project>
+      <Name>vtkSurface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

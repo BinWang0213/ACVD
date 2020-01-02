@@ -243,7 +243,8 @@ int main( int argc, char *argv[] ) {
 
 			ifstream input;
 			input.open( value );
-			bool fixed[ mesh->GetNumberOfPoints() ];
+			bool* fixed = new bool[mesh->GetNumberOfPoints()];
+			//bool fixed[ mesh->GetNumberOfPoints() ];
 			fixedVertices = vtkIdList::New();
 			int id, n = 0;
 
@@ -264,7 +265,7 @@ int main( int argc, char *argv[] ) {
 
 			input.close();
 			cout << "Added " << n << " constraints on triangles" << endl;
-
+			delete[] fixed; //Free dynamic error
 		}
 
 		argumentsIndex += 2;

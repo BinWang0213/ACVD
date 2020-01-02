@@ -1,0 +1,36 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/DiscreteRemeshing/Examples/CMakeLists.txt
+  AnisotropicRemeshing.cxx
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(111): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(115): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(116): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(238): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(239): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(243): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(670): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(653): note: while compiling class template member function 'vtkIntArray *vtkUniformClustering<Metric,vtkIdType>::ProcessClustering(vtkIdList *)'
+          with
+          [
+              Metric=vtkAnisotropicMetricForClustering
+          ]
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkDiscreteRemeshing.h(895): note: see reference to function template instantiation 'vtkIntArray *vtkUniformClustering<Metric,vtkIdType>::ProcessClustering(vtkIdList *)' being compiled
+          with
+          [
+              Metric=vtkAnisotropicMetricForClustering
+          ]
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkDiscreteRemeshing.h(876): note: while compiling class template member function 'void vtkDiscreteRemeshing<vtkAnisotropicMetricForClustering>::Remesh(void)'
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(232): note: see reference to function template instantiation 'void vtkDiscreteRemeshing<vtkAnisotropicMetricForClustering>::Remesh(void)' being compiled
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkVerticesProcessing.h(44): note: see reference to class template instantiation 'vtkDiscreteRemeshing<vtkAnisotropicMetricForClustering>' being compiled
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\AnisotropicRemeshing.cxx(106): note: see reference to class template instantiation 'vtkVerticesProcessing<AnisotropicRemeshing>' being compiled
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(671): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(673): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/AnisotropicRemeshing.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/AnisotropicRemeshing.exp
+  AnisotropicRemeshing.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\AnisotropicRemeshing.exe

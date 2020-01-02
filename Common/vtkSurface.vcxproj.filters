@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\RenderWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkDelaunay.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkDualMeshDisplay.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkOFFReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkOFFWriter.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkQuadricTools.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkRandomTriangulation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkSMFReader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkSurface.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkSurfaceBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkVolumeProperties.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkNeighbourhoodComputation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkCurvatureMeasure.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\vtk\ACVD\ACVD-master\Common\vtkMyMinimalStandardRandomSequence.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\vtk\ACVD\ACVD-master\Common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B71C748D-C2F0-3057-83AD-C3737A3FFFEA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

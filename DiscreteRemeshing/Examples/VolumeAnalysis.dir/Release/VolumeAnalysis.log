@@ -1,0 +1,40 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/DiscreteRemeshing/Examples/CMakeLists.txt
+  VolumeAnalysis.cxx
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(70): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(97): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(134): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(138): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(142): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(456): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(457): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(670): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(653): note: while compiling class template member function 'vtkIntArray *vtkUniformClustering<Metric,vtkIdType>::ProcessClustering(vtkIdList *)'
+          with
+          [
+              Metric=vtkIsotropicMetricForClustering
+          ]
+  c:\vtk\acvd\acvd-master\discreteremeshing\vtkDiscreteRemeshing.h(895): note: see reference to function template instantiation 'vtkIntArray *vtkUniformClustering<Metric,vtkIdType>::ProcessClustering(vtkIdList *)' being compiled
+          with
+          [
+              Metric=vtkIsotropicMetricForClustering
+          ]
+  c:\vtk\acvd\acvd-master\discreteremeshing\vtkDiscreteRemeshing.h(876): note: while compiling class template member function 'void vtkDiscreteRemeshing<vtkIsotropicMetricForClustering>::Remesh(void)'
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\Examples\VolumeAnalysis.cxx(240): note: see reference to function template instantiation 'void vtkDiscreteRemeshing<vtkIsotropicMetricForClustering>::Remesh(void)' being compiled
+  c:\vtk\acvd\acvd-master\discreteremeshing\vtkVerticesProcessing.h(44): note: see reference to class template instantiation 'vtkDiscreteRemeshing<vtkIsotropicMetricForClustering>' being compiled
+  C:\vtk\ACVD\ACVD-master\DiscreteRemeshing\vtkIsotropicDiscreteRemeshing.h(56): note: see reference to class template instantiation 'vtkVerticesProcessing<IsotropicRemeshing>' being compiled
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(671): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+C:\vtk\ACVD\ACVD-master\Common\vtkUniformClustering.h(673): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/VolumeAnalysis.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/VolumeAnalysis.exp
+  VolumeAnalysis.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\VolumeAnalysis.exe

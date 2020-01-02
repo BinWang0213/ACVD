@@ -1,0 +1,15 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/VolumeProcessing/Examples/CMakeLists.txt
+  VolumeSlice.cxx
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(62): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(63): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(340): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(407): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(425): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(426): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(477): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\vtk\ACVD\ACVD-master\VolumeProcessing\Examples\VolumeSlice.cxx(486): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  VolumeSlice.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\VolumeSlice.exe

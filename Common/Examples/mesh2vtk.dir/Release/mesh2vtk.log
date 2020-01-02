@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/Common/Examples/CMakeLists.txt
+  mesh2vtk.cxx
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/mesh2vtk.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/mesh2vtk.exp
+  mesh2vtk.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\mesh2vtk.exe

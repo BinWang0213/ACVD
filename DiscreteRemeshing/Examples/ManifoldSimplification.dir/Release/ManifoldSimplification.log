@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/vtk/ACVD/ACVD-master/DiscreteRemeshing/Examples/CMakeLists.txt
+  ManifoldSimplification.cxx
+     Creating library C:/vtk/ACVD/ACVD-master/bin/Release/ManifoldSimplification.lib and object C:/vtk/ACVD/ACVD-master/bin/Release/ManifoldSimplification.exp
+  ManifoldSimplification.vcxproj -> C:\vtk\ACVD\ACVD-master\bin\Release\ManifoldSimplification.exe
